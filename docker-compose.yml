@@ -1,0 +1,17 @@
+version: "3.3"
+
+networks:
+  bioinfo:
+
+services:
+  mirdeep2:
+    image: btrspg/mirdeep2:latest
+    hostname: dk-mirdeep2
+    container_name: dk-mirdeep2
+    tty: true
+    restart: always
+    volumes:
+      - /tmp:/tmp
+    networks:
+      - bioinfo
+    user: ${CURRENT_UID}
