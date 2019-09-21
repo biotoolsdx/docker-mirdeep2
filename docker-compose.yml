@@ -14,4 +14,4 @@ services:
       - /tmp:/tmp
     networks:
       - bioinfo
-    user: ${CURRENT_UID}
+    user: "999:999"

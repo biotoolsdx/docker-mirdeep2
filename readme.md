@@ -20,5 +20,5 @@ services:
       - /spe:/spe #特异挂载目录
     networks:
       - bioinfo
-    user: ${CURRENT_UID}  # 特异用户uid
+    user: "uid:gid" # 特异用户uid,gid
 ```
